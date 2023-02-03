@@ -5,7 +5,7 @@ module.exports = {
 
   entry: "./docs/App.jsx",
   output: {
-    path: `${__dirname}/docs/dist`,
+    path: `${__dirname}/docs`,
     filename: "index.js",
   },
   module: {
@@ -31,8 +31,7 @@ module.exports = {
     hot: true,
     // historyApiFallback: true,
     port: 8081,
-    // watchFiles: ["./docs/**/*"],
-    // hot: true,
+    watchFiles: ["./docs/**/*"],
     static: {
       directory: path.join(__dirname, "/docs"),
     },
