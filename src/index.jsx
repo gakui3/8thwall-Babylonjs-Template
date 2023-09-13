@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import ReactDOM from "react-dom/client";
-import BabylonScene from "./customBabylonjsPipelineModule";
+import BabylonScene from "./components/BabylonScene";
 
 function XRComponent() {
   const [xrLoaded, setXrLoaded] = useState(false);

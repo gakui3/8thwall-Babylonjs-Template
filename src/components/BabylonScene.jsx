@@ -5,7 +5,7 @@ import {
   HemisphericLight,
   MeshBuilder,
 } from "@babylonjs/core";
-import SceneComponent from "./components/SceneComponent";
+import BabylonSetup from "./BabylonSetup";
 
 const BabylonScene = () => {
   let box;
@@ -39,7 +39,7 @@ const BabylonScene = () => {
 
   return (
     <div>
-      <SceneComponent
+      <BabylonSetup
         antialias
         onSceneReady={onSceneReady}
         onRender={onRender}
